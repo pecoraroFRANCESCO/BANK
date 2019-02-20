@@ -11,9 +11,18 @@ import ReactDOM from "react-dom";
 import Header from "./components/header";
 import Carte from "./components/carte";
 import InfoBar from "./components/infobar";
+import {css} from "emotion";
+
+const styles = {
+    html: css({
+        padding: 0,
+        margin: 0,
+        background: "red",
+    }),
+};
 
 ReactDOM.render(
-    <div>
+    <div className={styles.html}>
         <Header />
         <Carte />
         <InfoBar />
