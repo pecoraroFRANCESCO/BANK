@@ -8,7 +8,15 @@
 
 import * as React from "react";
 import ReactDOM from "react-dom";
+import Header from "./components/header";
+import Carte from "./components/carte";
+import InfoBar from "./components/infobar";
 
-import HelloWorld from "./components/hello";
-
-ReactDOM.render(<HelloWorld />, document.querySelector("#app"));
+ReactDOM.render(
+    <div>
+        <Header />
+        <Carte />
+        <InfoBar />
+    </div>,
+    document.querySelector("#app"),
+);
