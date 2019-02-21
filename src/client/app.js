@@ -11,18 +11,21 @@ import ReactDOM from "react-dom";
 import Header from "./components/header";
 import Carte from "./components/carte";
 import InfoBar from "./components/infobar";
-import {css} from "emotion";
+import {injectGlobal} from "emotion";
 
-const styles = {
-    html: css({
-        padding: 0,
+injectGlobal({
+    "*": {
         margin: 0,
-        background: "red",
-    }),
-};
+        padding: 0,
+    },
+
+    html: {
+        background: "#dadfdb",
+    },
+});
 
 ReactDOM.render(
-    <div className={styles.html}>
+    <div>
         <Header />
         <Carte />
         <InfoBar />
