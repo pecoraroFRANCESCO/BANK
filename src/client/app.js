@@ -38,8 +38,12 @@ injectGlobal({
 const styles = {
     container: css({
         flexDirection: "columns",
-        border: "1px solid black",
-        background: "cyan",
+
+        width: "700px",
+    }),
+
+    position: css({
+        marginTop: "10px",
     }),
 };
 

@@ -3,8 +3,9 @@ import {css} from "emotion";
 import Cbank from "../img/Cbank.png";
 
 const styles = {
-    color: css({
+    font: css({
         color: "black",
+        padding: "0 96px",
     }),
 
     mod: css({
@@ -15,8 +16,9 @@ const styles = {
 
     container: css({
         display: "flex",
-        border: "1px solid black",
-        background: "red",
+
+        marginTop: "60px",
+        marginBottom: "10px",
     }),
 };
 
@@ -33,7 +35,7 @@ export default class Header extends React.Component {
                 <img src={Cbank} className={styles.mod} />
                 <img src={Cbank} className={styles.mod} />
                 <img src={Cbank} className={styles.mod} />
-                <h1 className={styles.color}>{"Find Bank"}</h1>
+                <h1 className={styles.font}>{"Find Bank"}</h1>
                 <img src={Cbank} className={styles.mod} />
                 <img src={Cbank} className={styles.mod} />
                 <img src={Cbank} className={styles.mod} />
