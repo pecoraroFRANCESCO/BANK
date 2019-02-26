@@ -45,8 +45,10 @@
   "dependencies": {
     "emotion": "^10.0.7",
     "express": "^4.16.4",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "leaflet": "^1.4.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-leaflet": "^2.2.1"
   },
   "husky": {
     "hooks": {

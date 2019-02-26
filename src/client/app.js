@@ -11,7 +11,7 @@ import ReactDOM from "react-dom";
 import Header from "./components/header";
 import Carte from "./components/carte";
 import InfoBar from "./components/infobar";
-import {injectGlobal} from "emotion";
+import {css, injectGlobal} from "emotion";
 
 injectGlobal({
     "*": {
@@ -22,13 +22,33 @@ injectGlobal({
     html: {
         background: "#dadfdb",
     },
+
+    body: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flex: 1,
+    },
+
+    "#app": {
+        display: "flex",
+    },
 });
 
+const styles = {
+    container: css({
+        flexDirection: "columns",
+        border: "1px solid black",
+        background: "cyan",
+    }),
+};
+
 ReactDOM.render(
-    <div>
+    <div className={styles.container}>
         <Header />
         <Carte />
         <InfoBar />
     </div>,
+
     document.querySelector("#app"),
 );
