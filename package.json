@@ -48,6 +48,7 @@
     "emotion": "^10.0.7",
     "express": "^4.16.4",
     "leaflet": "^1.4.0",
+    "mongoose": "^5.4.16",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-leaflet": "^2.2.1"
