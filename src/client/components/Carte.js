@@ -1,13 +1,6 @@
 import * as React from "react";
-// import {css} from "emotion";
 import L from "leaflet";
-
-// const styles = {
-//     container: css({
-//         width: "700px",
-//         height: "350px",
-//     }),
-// };
+// import icon from "../img/navigate.png";
 
 export default class Carte extends React.Component {
     render() {
@@ -18,6 +11,12 @@ export default class Carte extends React.Component {
                         location.coords.longitude,
                     ),
                     map = L.map("mapid").setView(latlng, 13),
+                    // PositionIcon = L.icon({
+
+                    //     iconUrl: icon,
+                    //     iconSize: [30, 30],
+                    // });
+
                     // eslint-disable-next-line no-unused-vars
                     marker = L.marker(latlng).addTo(map);
 
